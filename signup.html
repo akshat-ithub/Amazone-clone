@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Amazon Account</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://www.amazon.com/favicon.ico">
+</head>
+<style>
+    /* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+}
+
+.container {
+  max-width: 350px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+}
+
+.signin-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fefefe;
+}
+
+.signin-box h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  margin-top: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px
+}
+</style>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="logo" />
+
+    <div class="signin-box">
+      <h1>Create account</h1>
+      <form>
+        <label for="name">Your name</label>
+        <input type="text" id="name" placeholder="First and last name" required />
+
+        <label for="email">Mobile number or email</label>
+        <input type="text" id="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="At least 6 characters" required />
+        <p class="password-hint">Passwords must be at least 6 characters.</p>
+
+        <label for="reenter-password">Re-enter password</label>
+        <input type="password" id="reenter-password" required />
+
+        <button type="submit" class="btn">Continue</button>
+
+        <p class="info-text">
+          By creating an account, you agree to Amazon's
+          <a href="#">Conditions of Use</a> and
+          <a href="#">Privacy Notice</a>.
+        </p>
+      </form>
+    </div>
+
+    <p class="info-text" style="margin-top: 20px;">
+      Already have an account? <a href="signin.html">Sign in</a>
+    </p>
+  </div>
+</body>
+</html>
